@@ -4,5 +4,5 @@ RUN mkdir /code
 WORKDIR /code
 ADD requirements.txt /code/
 RUN pip install -r requirements.txt
-RUN sudo pip install django flake8 psycopg2
+RUN pip install django flake8 psycopg2
 ADD . /code/
